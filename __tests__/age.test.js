@@ -22,4 +22,9 @@ describe('Age', () => {
       let input = new Age(90, "average")
       expect(input.lifeExpected()).toEqual(10)
     })
+
+    test("should return the life expectancy for all other planets", () => {
+      let input = new Age(30, "average")
+      expect(input.lifeExpected()).toEqual([50, 208.33, 80.64, 26.59, 4.21])
+    })
 });
