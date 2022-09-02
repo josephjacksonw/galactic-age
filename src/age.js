@@ -23,7 +23,9 @@ export default class Age {
   }
 
   lifeExpected() {
-    return "good fail"
+    let expected = expectedLife[this.lifestyle]
+    let outcome = expected - this.age
+    return outcome
   }
 
 }
