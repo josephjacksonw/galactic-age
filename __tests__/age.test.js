@@ -17,4 +17,9 @@ describe('Age', () => {
       let input = new Age(30, "average")
       expect(input.lifeExpected()).toEqual(50)
     })
+
+    test("should return the amount of years over the life expectancy if older that in", () => {
+      let input = new Age(90, "average")
+      expect(input.lifeExpected()).toEqual(10)
+    })
 });
