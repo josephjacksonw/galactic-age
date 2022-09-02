@@ -12,4 +12,9 @@ describe('Age', () => {
       let input = new Age(30, "average")
       expect(input.getAge()).toEqual([125.00, 48.39, 15.96, 2.53])
     })
+
+    test("should return the amount of years left for their life expectancy", () => {
+      let input = new Age(30, "average")
+      expect(input.lifeExpected()).toEqual(50)
+    })
 });

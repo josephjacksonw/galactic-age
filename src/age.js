@@ -1,3 +1,9 @@
+const expectedLife = {
+  healthy: 90,
+  average: 80,
+  unhealthy: 70
+}
+
 export default class Age {
   constructor(age, lifestyle) {
      this.age = age;
@@ -15,4 +21,9 @@ export default class Age {
     jupiter = Number(jupiter.toFixed(2))
     return [mercury, venus, mars, jupiter]
   }
+
+  lifeExpected() {
+    return "good fail"
+  }
+
 }
