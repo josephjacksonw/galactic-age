@@ -24,8 +24,17 @@ export default class Age {
 
   lifeExpected() {
     let expected = expectedLife[this.lifestyle]
-    let outcome = expected - this.age
-    return Math.abs(outcome)
+    let outcome = Math.abs(expected - this.age)
+    let mercury = outcome/.24
+    mercury = Number(mercury.toFixed(2))
+    let venus = outcome/.62
+    venus = Number(venus.toFixed(2))
+    let mars = outcome/1.88
+    mars = Number(mars.toFixed(2))
+    let jupiter = outcome/11.86
+    jupiter = Number(jupiter.toFixed(2))
+    let outArray = [outcome, mercury, venus, mars, jupiter]
+    return outArray
   }
 
 }
