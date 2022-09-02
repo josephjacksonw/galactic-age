@@ -8,15 +8,18 @@
     <label for="age">Enter Your Age: </label>
     <input type="number" id="age" name="age" min="0" max="999"><br>
     <p>How would you describe your lifestyle?</p><br>
-    <input type="radio" id="healthy" name="lifestyle" value="healthy">
-    <label for="healthy">Healthy</label><br>
-    <input type="radio" id="average" name="lifestyle" value="average">
-    <label for="average">Average</label><br>
-    <input type="radio" id="unhealthy" name="lifestyle" value="unhealthy">
-    <label for="unhealthy">Unhealthy</label>
-    <button type="submit">Find My Age1</button>
+    <label>
+      <input type="radio" name="lifestyle" value="healthy">Healthy
+    </label><br>
+    <label>
+      <input type="radio" name="lifestyle" value="average">Average
+    </label><br>
+    <label>
+      <input type="radio" name="lifestyle" value="unhealthy">Unhealthy
+    </label><br>
+    <button type="submit">Find My Age</button>
   </form>
-  <p id="here1"></p>
-  <p id="here2"></p>
+  <p>Your age on Mercury, Venus, Mars, and Jupiter: <span id="here1"></span></p>
+  <p>Your remaining lifespan on Earth and other planets: <span id="here2"></span></p>
 </body>
 </html>
