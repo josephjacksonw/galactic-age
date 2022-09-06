@@ -4,22 +4,60 @@
 <title>Galactic Age</title>
 </head>
 <body>
-  <form id="life">
-    <label for="age">Enter Your Age: </label>
-    <input type="number" id="age" name="age" min="0" max="999"><br>
-    <p>How would you describe your lifestyle?</p><br>
-    <label>
-      <input type="radio" name="lifestyle" value="healthy">Healthy
-    </label><br>
-    <label>
-      <input type="radio" name="lifestyle" value="average">Average
-    </label><br>
-    <label>
-      <input type="radio" name="lifestyle" value="unhealthy">Unhealthy
-    </label><br>
-    <button type="submit">Find My Age</button>
-  </form>
-  <p>Your age on Mercury, Venus, Mars, and Jupiter: <span id="here1"></span></p>
-  <p>Your remaining lifespan on Earth and other planets: <span id="here2"></span></p>
+  <h1>Galactic Age Calculator</h1>
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <form id="life">
+        <label for="age">Enter Your Age: </label>
+        <input type="number" id="age" name="age" min="0" max="999"><br>
+        <p>How would you describe your lifestyle?</p>
+        <label>
+          <input type="radio" name="lifestyle" value="healthy">Healthy
+        </label><br>
+        <label>
+          <input type="radio" name="lifestyle" value="average">Average
+        </label><br>
+        <label>
+          <input type="radio" name="lifestyle" value="unhealthy">Unhealthy
+        </label><br>
+        <button type="submit">Find My Age</button>
+      </form>
+    </div>
+    <div class="col-4"></div>
+  </div>
+  <div class="row" id="yellow">
+    <div class="col-6">
+      <div class="hidden" id="results">
+        <p>Here's how many years old you would be on other planets!</p>
+        <p>Mercury: <span id="mercury"></span></p>
+        <p>Venus: <span id="venus"></span></p>
+        <p>Mars: <span id="mars"></span></p>
+        <p>Jupiter: <span id="jupiter"></span></p>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="hidden" id="underExpected">
+        <p>Based on your lifestyle, you would be projected to live this many years on each planet: </p>
+      </div>
+      <div class="hidden" id="overExpected">
+        <p>Based on your lifestyle, you have lived this many years past your projected lifespan: </p>
+      </div>
+      <div class="hidden" id="agediff">
+        <p>Earth: <span id="earth1"></span></p>
+        <p>Mercury: <span id="mercury1"></span></p>
+        <p>Venus: <span id="venus1"></span></p>
+        <p>Mars: <span id="mars1"></span></p>
+        <p>Jupiter: <span id="jupiter1"></span></p>
+      </div>
+      <div class="hidden" id="equalExpected">
+        <p>You are as old as your expected lifespan. Continue doing your thing!</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+  
 </body>
 </html>

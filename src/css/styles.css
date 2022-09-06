@@ -2,3 +2,18 @@ body {
   background-color: black;
   color: aqua;
 }
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+}
+
+#yellow {
+  color: yellow;
+  margin: auto;
+  font-weight: bold;
+}
