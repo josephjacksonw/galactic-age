@@ -1,4 +1,4 @@
-# _Pizza Parlor_
+# _Galactic Age_
  
 #### By _**Joseph Jackson**_
  
@@ -26,7 +26,7 @@ _A site where a user can input their age and receive their age back in respect t
 * _Clone the repository to your desktop_
 * _Open the repository in Visual Studio Code_
 * _Run "$ npm install" and "$ npm run build" to set up the project_
-* _Run "$ npm gun start" to go live and view the project_
+* _Run "$ npm run start" to go live and view the project_
  
 ## Known Bugs
  
